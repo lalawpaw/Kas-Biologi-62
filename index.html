@@ -507,7 +507,7 @@ function renderTable() {
     const filter = document.getElementById("searchBar").value.toLowerCase();
     const tb = document.getElementById("tableBody");
     tb.innerHTML = "";
-    // if (Object.keys(statusBayar).length === 0) return;
+    if (Object.keys(statusBayar).length === 0) return;
 
     const deadlineDate = new Date(); deadlineDate.setMonth(bulan, 0); deadlineDate.setHours(23,59,59);
     const isPastDeadline = (deadlineDate - new Date()) <= 0;
