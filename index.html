@@ -446,7 +446,7 @@ function toggleTreasure() {
     const container = document.getElementById("particlesContainer");
 
     if (!isChestOpen) {
-        img.src = "peti/peti_2.png"; // Peti Terbuka
+        img.src = "peti_2.png"; // Peti Terbuka
         amt.classList.add("show");
         hint.textContent = "Klik peti untuk menutup";
         
@@ -467,7 +467,7 @@ function toggleTreasure() {
         }
         isChestOpen = true;
     } else {
-        img.src = "peti/peti_1.png"; // Peti Tertutup
+        img.src = "peti_1.png"; // Peti Tertutup
         amt.classList.remove("show");
         hint.textContent = "Klik untuk membuka peti!";
         isChestOpen = false;
