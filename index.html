@@ -528,7 +528,7 @@ function renderTable() {
             aksiBtn = data.bukti ? `<button class="btn-primary btn-small" style="background:none; color:var(--primary); border:none; padding:0; text-decoration:underline;" onclick="openModal('${data.bukti}')">Lihat Bukti</button>` : '';
             if(isAdmin) aksiBtn += `<br><button class="btn-action btn-reject" onclick="prosesAdmin('${nim}', '${bulan}', 'reject')" style="margin-top:5px;">Batal</button>`;
         } else if (data?.statusText === "Menunggu Konfirmasi") {
-            statusBadge = `<span class="badge badge-warning"><i class="fa-solid fa-hourglass"></i> Pending</span>`;
+            statusBadge = `<span class="badge badge-warning"><i class="fa-solid fa-hourglass"></i> Menunggu Konfirmasi</span>`;
             metodeText = data.metode;
             let linkBukti = data.bukti ? `<button class="btn-primary btn-small" style="background:none; color:var(--primary); border:none; padding:0; text-decoration:underline; margin-bottom:5px; display:block;" onclick="openModal('${data.bukti}')">Cek Bukti</button>` : '';
             if (isAdmin) {
